@@ -17,3 +17,5 @@ export const registerSchema = loginSchema
     message: "passwords do not match",
     path: ["confirmPassword"],
   });
+
+export const verificationCodeSchema = z.string().min(1).max(24)
